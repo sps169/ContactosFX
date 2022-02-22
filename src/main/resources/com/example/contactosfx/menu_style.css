@@ -1,0 +1,7 @@
+#menuBox {
+    -fx-background-color: lightblue;
+}
+
+.separator {
+    -fx-fill: white;
+}

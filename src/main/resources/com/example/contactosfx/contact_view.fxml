@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="contactView" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.contactosfx.ContactViewController">
+   <children>
+      <Button fx:id="details_button" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#detailsButtonOnClick" onMouseEntered="#detailsButtonHover" prefWidth="90.0" stylesheets="@contact_view_style.css" text="CLICK HERE TO SEE SOMEONES DATA" textAlignment="CENTER" wrapText="true" StackPane.alignment="CENTER" />
+      <VBox fx:id="contact_details_box" alignment="TOP_CENTER" stylesheets="@contact_view_style.css" visible="false">
+         <children>
+            <ImageView fx:id="image_view" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin></ImageView>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Name">
+                     <HBox.margin>
+                        <Insets bottom="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="name_label" text="Label">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER">
+               <children>
+                  <Label text="Mail">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="mail_label" text="Label">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+         <StackPane.margin>
+            <Insets bottom="150.0" left="250.0" right="250.0" top="150.0" />
+         </StackPane.margin>
+      </VBox>
+   </children>
+</StackPane>

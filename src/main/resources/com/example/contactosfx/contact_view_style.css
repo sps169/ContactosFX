@@ -1,0 +1,23 @@
+#details_button {
+    -fx-border-color: white;
+    -fx-background-color: lightblue;
+    -fx-text-fill: black;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-insets: 3;
+}
+
+#details_button:hover {
+    -fx-background-color: #009dff;
+}
+
+#details_button:pressed {
+    -fx-background-color: #e97df5;
+}
+
+#contact_details_box {
+    -fx-background-color: #ffdbe1;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.contactosfx.Controller">
+   <children>
+      <VBox fx:id="menuBox" maxHeight="1.7976931348623157E308" maxWidth="-Infinity" minWidth="-Infinity" onMouseEntered="#onMenuEnterHover" onMouseExited="#onMenuExitHover" prefWidth="200.0" stylesheets="@menu_style.css" translateX="-150.0" StackPane.alignment="TOP_LEFT">
+         <children>
+            <Label alignment="TOP_LEFT" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" text="ContactosFX" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="50.0" top="40.0" />
+               </VBox.margin>
+            </Label>
+            <Separator maxWidth="1.7976931348623157E308" stylesheets="@menu_style.css">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Separator>
+            <Button fx:id="user_1_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onUser1Click" text="Placeholder1">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Button>
+            <Button fx:id="user_2_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onUser2Click" text="Placeholder2">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Button>
+            <Button fx:id="user_3_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onUser3Click" text="Placeholder3">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Button>
+            <Separator maxWidth="1.7976931348623157E308" stylesheets="@menu_style.css">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Separator>
+            <Button fx:id="preferences_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onPreferencesButtonClick" text="Preferences">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Button>
+            <Separator maxWidth="1.7976931348623157E308" onMouseEntered="#onMenuEnterHover" stylesheets="@menu_style.css">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Separator>
+            <Button fx:id="exit_button" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onExitClick" text="Exit">
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="5.0" />
+               </VBox.margin></Button>
+         </children>
+      </VBox>
+      <fx:include fx:id="contactView" source="contact_view.fxml" />
+      <fx:include fx:id="preferencesView" source="preferences_view.fxml" visible="false" />
+   </children>
+</StackPane>
